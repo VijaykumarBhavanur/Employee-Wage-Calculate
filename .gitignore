@@ -1,6 +1,10 @@
+# Class path file
+.classpath    
+.settings/  
 bin/  
-test1/ 
-test2/  
+test1/  
 x.pdf  
-y.pdf  
-z.pdf
+z.pdf  
+.project    
+test2/  
+y.pdf
