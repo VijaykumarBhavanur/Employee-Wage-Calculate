@@ -15,7 +15,11 @@ public class EmployeeWage {
 		int fullDayHour = 8;
 		int halfDayHour = 4;
 		int dailyWage = 0;
-
+		int monthlyWage = 0;
+		int workingDayPerMonth = 20;
+		
+		for(int i=1; i<=workingDayPerMonth;i++)
+		{
 		switch (randomNum) {
 		case 1:
 			System.out.println("Employee worked fulltime");
@@ -29,7 +33,11 @@ public class EmployeeWage {
 		default:
 			System.out.println("Employee is absent");
 		}
-		System.out.println("Daily wage: " + dailyWage);
+		System.out.println("Day : "+i+" Wage: "+dailyWage);
+		monthlyWage = monthlyWage + dailyWage;
+		}
+		
+		System.out.println("Monthly wage: " + monthlyWage);
 
 	}
 
