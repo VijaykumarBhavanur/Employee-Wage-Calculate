@@ -10,11 +10,21 @@ public class EmployeeWage {
 		
 		Random random  = new Random();
 		int randomNum = random.nextInt(2);
+	
+		int wagePerHour = 20;
+		int fullDayHour = 8;
+		int dailyWage = 0;
+		
 		
 		if(randomNum == 1)
+		{
 			System.out.println("Employee is present");
+			dailyWage = fullDayHour * wagePerHour;
+		}
 		else
 			System.out.println("Employee is absent");
+		
+		System.out.println("Daily wage: "+dailyWage);
 	
 	}
 
